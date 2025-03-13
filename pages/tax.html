@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excercise Mobile subj</title>
+    <style>
+      @import url(/resources/css/Common.css);
+    </style>
+    <script src="/resources/script/script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>โปรแกรมคำนวณภาษี</h1>
+      <div
+        style="
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          margin-bottom: 1rem;
+        "
+      >
+        <p for="amount">รายได้ (บาท)</p>
+        <button onclick="addInputButton()">add</button>
+        <button onclick="removeInputButton()">remove</button>
+      </div>
+      <div
+        id="incomeContainer"
+        style="display: flex; flex-direction: column; gap: 1rem; height: 16rem"
+      >
+        <input type="number" class="income" />
+      </div>
+      <div>
+        <label for="totalIncome">รายได้รวม (บาท)</label>
+        <hr />
+        <p id="totalIncome" class="money">0</p>
+        <label for="taxRate">อัตราการจ่ายภาษี (%)</label>
+        <hr />
+        <p id="taxRate" class="money">0</p>
+        <label for="totalTax">ภาษีที่ต้องจ่าย</label>
+        <hr />
+        <p id="totalTax" class="money">0</p>
+      </div>
+    </main>
+    <button style="position: fixed; bottom:2rem; right: 2rem; background-color: black" onclick="window.location.href = '/index.html'">Back</button>
+  </body>
+</html>

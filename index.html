@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excercise Mobile subj</title>
+    <style>
+      @import url(/resources/css/Common.css);
+      li {
+        height: 20rem;
+        width: 20rem;
+        font-size: 32px;
+        background-color: lightskyblue;
+        border-radius: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      li:hover {
+        background-color: #6ca4c8;
+        color: white;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100dvh;
+    "
+  >
+    <ul style="display: flex; gap: 2rem">
+      <li onclick="window.location.href = '/pages/home.html'">Home</li>
+      <li onclick="window.location.href = '/pages/tax.html'">Tax Calculator</li>
+    </ul>
+  </body>
+</html>

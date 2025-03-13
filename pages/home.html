@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excercise Mobile subj</title>
+    <style>
+      @import url(/resources/css/Common.css);
+      /* @import url(/resources/css/BlackWhite.css); */
+      @import url(/resources/css/Color.css);
+      li {
+        cursor: pointer;
+      }
+      /* @import url(/resources/css/Color.css); */
+    </style>
+    <script src="/resources/script/script.js"></script>
+  </head>
+  <body style="margin: 0%">
+    <header>
+      <h1 style="text-align: center">Cities</h1>
+      <button
+        id="toggleMode"
+        type="button"
+        onclick="switchMode()"
+        style="font-size: small"
+      >
+        Toggle dark mode
+      </button>
+    </header>
+    <div style="margin-top: 120px; padding-left: 0%; display: flex">
+      <aside style="display: flex; flex-direction: column; height: 100dvh">
+        <ul
+          id="sideBar"
+          style="width: 120px; display: flex; flex-direction: column; gap: 1rem;"
+        >
+          <li type="button" onclick="setCity('London')">london</li>
+          <li type="button" onclick="setCity('Paris')">paris</li>
+          <li type="button" onclick="setCity('Tokyo')">tokyo</li>
+          <li
+            onclick="window.location.href = '/pages/tax.html'"
+            style="cursor: pointer"
+          >
+            Tax Calculator
+          </li>
+        </ul>
+      </aside>
+
+      <main>
+        <h1 id="title">London</h1>
+        <p id="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni earum
+          aut corporis nesciunt quibusdam quisquam nihil cupiditate impedit
+          ducimus, a asperiores illum hic! Officia error fugit quod cum omnis ex
+          debitis, suscipit, autem rerum alias soluta vitae praesentium sed
+          accusamus doloribus possimus eos perferendis. Iste dicta provident
+          doloremque saepe deleniti.
+        </p>
+      </main>
+    </div>
+    <footer>footer</footer>
+    <button style="position: fixed; bottom:2rem; right: 2rem; background-color: black" onclick="window.location.href = '/index.html'">Back</button>
+  </body>
+</html>

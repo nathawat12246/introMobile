@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&display=swap");
+
+header {
+  width: 100vw;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0px;
+}
+footer {
+  width: 100dvw;
+  height: 100px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  padding-left: 4px;
+}
+li:hover {
+  background-color: gray;
+}
+body {
+  color: black;
+  font-family: "IBM Plex Sans Thai", serif;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+button {
+  margin: 0;
+  background-color: #008cba;
+  border: none;
+  color: white;
+  width: 5rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background: #007095;
+}
+
+input.income {
+  height: 4rem;
+  font-size: x-large;
+  border-style: dashed;
+  border-color: green;
+}
+
+main {
+  display: relative;
+  max-width: 32rem;
+  margin: auto auto;
+  min-height: 90dvh;
+  padding: 1rem;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin: 0%;
+}
+
+.money {
+  font-size:xx-large;
+  font-weight: 600;
+  
+}
