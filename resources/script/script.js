@@ -59,6 +59,16 @@ function cal() {
   return total;
 }
 
+function checkTypeIncome() {
+  document.querySelectorAll(".income").forEach((input) => {
+    if (isNaN(input.value)) {
+      alert("Please enter a number");
+      //remove last character in input
+      input.value = input.value.slice(0, -1);
+    }
+  });
+}
+
 function taxRate() {
   const income = document.getElementById("totalIncome").innerHTML;
   let rate = 0;
@@ -124,6 +134,7 @@ function calTax() {
 
 document.addEventListener("input", (event) => {
   if (event.target.classList.contains("income")) {
+    checkTypeIncome();
     cal();
     taxRate();
     calTax();
